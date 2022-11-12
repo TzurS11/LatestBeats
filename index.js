@@ -149,7 +149,7 @@ async function playSound(url, bsmap) {
     let stopImage = document.createElement("img");
     stopImage.id = "footer-stop-image";
     stopImage.setAttribute("onclick", "pauseSong()");
-    stopImage.setAttribute("src", "assets/pause-button-svgrepo-com.svg");
+    stopImage.setAttribute("src", "assets/pause-button.svg");
     let playingSongInfo = document.createElement("p");
     if (bsmap.authorName) {
       playingSongInfo.innerHTML = `<a class="link" href="beatsaver://${bsmap.id}">${bsmap.authorName} - ${bsmap.songName} [${bsmap.mapAuthor}]</a>`;
