@@ -268,3 +268,7 @@ p {
   margin-left: 10px;
   display: inline-block;
 }
+
+.mobileerror {
+  color: red;
+}
