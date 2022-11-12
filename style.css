@@ -1,0 +1,270 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  background-color: #242424;
+  /* filter: invert(1); */
+}
+.header {
+  background-color: #4a4a4a;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 10px;
+}
+
+#header-sep-2 {
+  display: none;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+.header p.title {
+  font-size: 40px;
+  margin: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 10px;
+  font-weight: bolder;
+}
+
+.map-coverImage {
+  border-width: 10px;
+  border-radius: 20px;
+  border-color: #242424;
+  border-style: solid;
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.seperator {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(to right, #242424, #5c5c5c38 50%);
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 15px;
+  display: block;
+}
+
+.map-stats-seperator {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.map-title {
+  overflow: visible;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  /* letter-spacing: 3px; */
+}
+
+.map-mapper {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+
+.diffType {
+  display: inline-block;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.map-ranked {
+  font-size: 20px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.map-ratio {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  margin-left: 5px;
+}
+
+.score-submittor {
+  inline-size: 1000px;
+  overflow: visible;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.footer img {
+  filter: invert(1);
+  /* display: none; */
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 50px;
+  opacity: 0;
+}
+
+button {
+  cursor: pointer;
+  border-style: solid;
+  font-weight: bold;
+  border-width: 3px;
+  color: white;
+  background-color: #141414;
+  border-color: #414141;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+button:active {
+  background-color: #292929;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes progressbar-opacity {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  5% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.progress {
+  position: fixed;
+  width: 0%;
+  height: 10px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+}
+
+#playingInfo {
+  position: fixed;
+  opacity: 0;
+  bottom: 15px;
+  right: 70px;
+  font-size: 20px;
+}
+
+.checkboxes {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.toggle {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 50.5px;
+  height: 27px;
+  background-color: #380000;
+  transition: background-color 0.5s;
+  border-radius: 30px;
+  border: 2px solid #141414;
+}
+
+/* After slide changes */
+.toggle:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  /* background-image:url(assets/gustavo.gif); */
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  top: 1px;
+  left: 1px;
+  transition: all 0.5s;
+}
+
+/* Toggle text */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+  left: 24.5px;
+}
+
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+  background-color: #00270a;
+}
+
+/* Checkbox vanished */
+.checkbox {
+  display: none;
+}
+
+.rankedonlyText {
+  /* position: relative; */
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  bottom: 10px;
+  margin-left: 10px;
+  display: inline-block;
+}

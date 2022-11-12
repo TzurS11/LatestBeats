@@ -1,0 +1,75 @@
+{
+  "type": "MAP_UPDATE",
+  "msg": {
+    "id": "2b0c9",
+    "name": "Celtix - Spacetime distortion",
+    "description": "For rank when I get mod.\n\nJabob star estimate: 10.65\n\nSend me feedback if you have any at Bitz#1010\n\nThank you very much Cobayo for RT mod <3\nThanks for QAT mod Denyah\nThank you for the BPM changes @slimyblob",
+    "uploader": {
+      "id": 4284297,
+      "name": "gBitz",
+      "uniqueSet": true,
+      "hash": "5f6e6ffc530c8e00064207e4",
+      "avatar": "https://cdn.beatsaver.com/avatar/4284297.jpg",
+      "type": "SIMPLE",
+      "admin": false,
+      "curator": false,
+      "verifiedMapper": true
+    },
+    "metadata": {
+      "bpm": 294,
+      "duration": 269,
+      "songName": "Spacetime distortion",
+      "songSubName": "",
+      "songAuthorName": "Celtix",
+      "levelAuthorName": "Bitz, Olaf & Hades"
+    },
+    "stats": {
+      "plays": 0,
+      "downloads": 0,
+      "upvotes": 6,
+      "downvotes": 5,
+      "score": 0.5239,
+      "scoreOneDP": 52.4
+    },
+    "uploaded": "2022-10-16T20:21:01.976512Z",
+    "automapper": false,
+    "ranked": false,
+    "qualified": false,
+    "versions": [
+      {
+        "hash": "25aa05b92d925205bbf27893f629887433be6b52",
+        "state": "Uploaded",
+        "createdAt": "2022-11-02T15:43:25.016446Z",
+        "sageScore": 5,
+        "diffs": [
+          {
+            "njs": 18,
+            "offset": -1.4,
+            "notes": 1803,
+            "bombs": 143,
+            "obstacles": 255,
+            "nps": 6.94,
+            "length": 1272.988,
+            "characteristic": "Standard",
+            "difficulty": "Expert",
+            "events": 8696,
+            "chroma": false,
+            "me": false,
+            "ne": false,
+            "cinema": false,
+            "seconds": 259.794,
+            "paritySummary": { "errors": 0, "warns": 0, "resets": 21 },
+            "maxScore": 1651515
+          }
+        ],
+        "downloadURL": "https://cdn.beatsaver.com/25aa05b92d925205bbf27893f629887433be6b52.zip",
+        "coverURL": "https://cdn.beatsaver.com/25aa05b92d925205bbf27893f629887433be6b52.jpg",
+        "previewURL": "https://cdn.beatsaver.com/25aa05b92d925205bbf27893f629887433be6b52.mp3"
+      }
+    ],
+    "createdAt": "2022-10-16T20:20:28.261070Z",
+    "updatedAt": "2022-11-06T19:15:08.120256Z",
+    "lastPublishedAt": "2022-11-06T19:15:04.419552Z",
+    "tags": ["tech", "speed", "speedcore", "electronic"]
+  }
+}
