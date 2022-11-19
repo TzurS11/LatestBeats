@@ -1,4 +1,19 @@
+function setRanked(value) {
+  localStorage.setItem("rankedOnly", value);
+  document.getElementById("switch").checked = value;
+}
+
 let a = new Audio();
+
+function setVolume(value) {
+  if (value >= 0 && value <= 1) {
+    localStorage.setItem("previewVol", value);
+    a.volume = value;
+  } else {
+    throw "Volume can only be from 0 to 1";
+  }
+}
+
 async function playSound(url, bsmap) {
   if (document.getElementById("progress") != null) {
     document.getElementById("progress").remove();
@@ -62,7 +77,7 @@ if (checkMobile()) {
 } else {
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.get("key") == null) {
-    console.log("no key was set");
+    // console.log("no key was set");
   } else {
     window.location.href = `beatsaver://${urlParams.get("key")}`;
   }
@@ -74,7 +89,7 @@ if (checkMobile()) {
     a.volume = Number(localStorage.getItem("previewVol"));
   }
 
-  console.log(localStorage.getItem("previewVol"));
+  // console.log(localStorage.getItem("previewVol"));
 
   // a.volume = 0.05;
 
@@ -100,9 +115,9 @@ if (checkMobile()) {
   //beatsaver
   let bsWs = new WebSocket("wss://ws.beatsaver.com/maps");
 
-  bsWs.onopen = function () {
-    console.log("connected to the beat saver websocket");
-  };
+  // bsWs.onopen = function () {
+  //   console.log("connected to the beat saver websocket");
+  // };
 
   fetch("https://api.beatsaver.com/maps/latest?sort=LAST_PUBLISHED")
     .then((res) => res.json())
